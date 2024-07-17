@@ -1,0 +1,11 @@
+.md-content img {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    outline-width: 3px;
+    outline-style: solid;
+    outline-color: grey;
+  }
+
+  img[alt=drawingv] { width: 200px; }
+  img[alt=drawingh] { width: 500px; }

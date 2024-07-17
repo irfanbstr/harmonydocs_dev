@@ -1,0 +1,993 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../filtergroupfavorit/">
+      
+      
+        <link rel="next" href="../smartbutton/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+    
+    
+      
+        <title>Create Update Delete Selection Archive - HARMONY SIMRS DOCUMENTATION</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.76a95c52.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#create-update-delete-selection-archive" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="HARMONY SIMRS DOCUMENTATION" class="md-header__button md-logo" aria-label="HARMONY SIMRS DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HARMONY SIMRS DOCUMENTATION
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Create Update Delete Selection Archive
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="HARMONY SIMRS DOCUMENTATION" class="md-nav__button md-logo" aria-label="HARMONY SIMRS DOCUMENTATION" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    HARMONY SIMRS DOCUMENTATION
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HOME
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ABOUT
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            ABOUT
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../profile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Profil Produk
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../arsitektur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Arsitektur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    GETTING STARTED
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            GETTING STARTED
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PENDAHULUAN
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            PENDAHULUAN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pendahuluan/aksesmasuk/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Akses Masuk ke Aplikasi
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pendahuluan/fungsimodul/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fungsi Modul Penunjang Medis
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../pendahuluan/fiturhighlevel/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fitur & Highlevel Workflow
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ANTARMUKA
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            ANTARMUKA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../layout/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Layout
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../view/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    View
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filtergroupfavorit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Filter Group & Favorit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Create Update Delete Selection Archive
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Create Update Delete Selection Archive
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updateedit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update/Edit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Contact
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archive-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archive Contact
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smartbutton/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Smart Button
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    MANUAL
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            MANUAL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../antrean/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MANAJEMEN ANTREAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updateedit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update/Edit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete" class="md-nav__link">
+    <span class="md-ellipsis">
+      Delete
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selection-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Selection Contact
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#archive-contact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archive Contact
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="create-update-delete-selection-archive">Create Update Delete Selection Archive</h1>
+<p>Di bab ini akan menjelaskan bagaimana cara membuat, update, hapus, arsip pilihan pada system RS Karya Medika. Pada dasarnya cara untuk melakukannya sama pada setiap modul karena itu di bab ini akan mencontohkan dari modul Pendaftaran.</p>
+<h2 id="create">Create</h2>
+<p>Cara untuk membuat pendaftaran pasien baru yaitu:
+- Pilih modul Pendaftaran dan klik Menu Pendaftaran Online.
+- Klik tombol jika sudah maka akan muncul tampilan form untuk membuat Pendaftaran baru seperti gambar dibawah ini:</p>
+<p><img alt="Gambar 16 Tampilan Halaman Form Create Pendaftaran" src="../img_antarmuka/16.png" /></p>
+<blockquote>
+<p>Gambar 16. Tampilan Halaman Form Create Pendaftaran</p>
+</blockquote>
+<ul>
+<li>Setelah itu input data yang harus diisi seperti Pasien, Tipe Kelas, Jenis Biaya, Cara Pembayaran, Layanan, Jadwal, dst. Jika sudah klik tombol untuk menyimpan data pasien yang sudah dibuat atau tombol untuk membatalkannya.</li>
+<li>Kemudian pilih tombol untuk melanjutkan pendaftaran dengan melakukan tindakan pemeriksaan dari suster.</li>
+<li>User bisa melihat rincian pasien rawat inap di tombol . Dan akan muncul gambar seperti dibawah ini:</li>
+</ul>
+<p><img alt="Gambar 17 Tampilan Halaman Rincian Rawat Inap Pasien– List View" src="../img_antarmuka/17.png" /></p>
+<blockquote>
+<p>Gambar 17. Tampilan Halaman Rincian Rawat Inap Pasien– List View</p>
+</blockquote>
+<p>Jika pasien sudah keluar dari rawat inap klik pada daftar yang sedang berjalan dan akan muncul gambar seperti berikut:</p>
+<p><img alt="Gambar 18 Tampilan Halaman Rincian Rawat Inap Pasien" src="../img_antarmuka/18.png" /></p>
+<blockquote>
+<p>Gambar 18. Tampilan Halaman Rincian Rawat Inap Pasien</p>
+</blockquote>
+<p><strong>Keterangan Gambar:</strong>
+- Information Umum = berisi informasi umum pasien, nama kerabat pasien, nomor kerabat pasien, dokter rujukan, dst.
+- Daftar Periksa = berisi informasi data tanggal keluar pasien rawat inap
+- Penilaian Suster = berisi informasi hasil diagnose dari pemeriksaan suster dan tindak lanjut berikutnya.
+- Penilaian Dokter = berisi informasi hasil diagnose dari pemeriksaan dokter dan tindak lanjut berikutnya.
+- Legal Details = berisi informasi pasien jika berhubungan dengan hukum.</p>
+<p>Klik untuk menyelesaikan proses rawat inap.</p>
+<h2 id="updateedit">Update/Edit</h2>
+<p>Cara untuk mengupdate/edit data pasien yang sudah dibuat yaitu:
+- Pilih modul Pendaftaran
+- Lalu pilih salah satu data pasien yang sudah ada di sistem
+- Klik tombol jika sudah maka akan muncul tampilan form edit Pendaftaran seperti gambar dibawah ini:</p>
+<p><img alt="Gambar 19 Tampilan Halaman Sunting Form Pendaftaran" src="../img_antarmuka/19.png" /></p>
+<blockquote>
+<p>Gambar 19. Tampilan Halaman Sunting Form Pendaftaran</p>
+</blockquote>
+<ul>
+<li>Sunting data-data sesuai dengan kebutuhan</li>
+<li>Klik tombol untuk menyimpan data pasien rawat inap yang sudah dibuat atau tombol untuk membatalkannya.</li>
+</ul>
+<h2 id="delete">Delete</h2>
+<p>Cara untuk menghapus Pendaftaran yang sudah dibuat yaitu:
+- Pilih modul Pendaftaran klik Menu Pendaftaran Online.
+- Lalu pilih salah satu Pendaftaran yang sudah ada di sistem.
+- Jika sudah maka akan muncul detail Pendaftaran seperti gambar dibawah ini:</p>
+<p><img alt="Gambar 20 Tampilan Halaman Detail Form Pendaftaran" src="../img_antarmuka/20.png" /></p>
+<blockquote>
+<p>Gambar 20. Tampilan Halaman Detail Form Pendaftaran</p>
+</blockquote>
+<ul>
+<li>Klik tombol lalu pilih Delete contoh seperti gambar dibawah ini:</li>
+</ul>
+<p><img alt="drawingv" src="../img_antarmuka/additional1.png" /></p>
+<p>Lalu akan muncul tampilan konfirmasi untuk menghapus record klik
+*Note: Bisa juga Mengarsipkan banyak Pendaftaran sekaligus dengan menggunakan fitur selection lalu klik Action &gt; Archive seperti pada bab 3.4.4</p>
+<h2 id="selection-contact">Selection Contact</h2>
+<p>Cara untuk memilih beberapa kontak yang ada di sistem yaitu:
+- Pilih modul Kontak
+- Ganti tampilan dari Kanban view menjadi list view dengan cara klik tombol jika sudah maka akan muncul tampilan daftar kontak seperti gambar dibawah ini:</p>
+<p><img alt="Gambar 21 Tampilan Halaman Daftar Contact – List View" src="../img_antarmuka/21.png" /></p>
+<blockquote>
+<p>Gambar 21. Tampilan Halaman Daftar Contact – List View</p>
+</blockquote>
+<p>Centang beberapa kontak yang ada contoh seperti gambar dibawah ini:</p>
+<p><img alt="Gambar 22 Tampilan Halaman Daftar Contact – List View" src="../img_antarmuka/22.png" /></p>
+<blockquote>
+<p>Gambar 22. Tampilan Halaman Daftar Contact – List View</p>
+</blockquote>
+<p><strong>Fungsi Tombol pada Tab Action</strong></p>
+<table>
+<thead>
+<tr>
+<th>TOMBOL</th>
+<th>FUNGSI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ekspor</td>
+<td>Berfungsi untuk mengekspor data yang sudah dipilih</td>
+</tr>
+<tr>
+<td>Arsip</td>
+<td>Berfungsi untuk mengarsip data</td>
+</tr>
+<tr>
+<td>Batalkan Pengarsipan</td>
+<td>Berfungsi untuk membatalkan arsip data</td>
+</tr>
+<tr>
+<td>Hapus</td>
+<td>Berfungsi untuk menghapus data yang sudah dipilih</td>
+</tr>
+</tbody>
+</table>
+<h2 id="archive-contact">Archive Contact</h2>
+<p>Cara untuk mengarsip kontak yang sudah dibuat yaitu:
+- Pilih modul Kontak
+- Lalu pilih salah satu Kontak yang sudah ada di sistem
+- Jika sudah maka akan muncul detail contact seperti gambar dibawah ini:</p>
+<p><img alt="Gambar 23 Tampilan Halaman Detail Contact" src="../img_antarmuka/23.png" /></p>
+<blockquote>
+<p>Gambar 23. Tampilan Halaman Detail Contact</p>
+</blockquote>
+<ul>
+<li>Klik tombol Tindakan lalu pilih Arsip contoh seperti gambar dibawah ini:</li>
+</ul>
+<p><img alt="kontak" src="../img_antarmuka/additional2.png" /></p>
+<p>*Note: Bisa juga Mengarsipkan banyak kontak sekaligus dengan menggunakan fitur selection lalu klik Action &gt; Archive seperti pada bab 3.4.4</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+    
+  </body>
+</html>
